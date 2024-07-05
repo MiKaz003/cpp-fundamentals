@@ -10,8 +10,10 @@ int main() {
     }
 
     for (size_t i = 0; i < tab_size; ++i) {
+        if (i % 2 == 1){
         std::cout << tab[i] << "\n";
+        }
     }
-
+    
     return 0;
 }

@@ -2,6 +2,7 @@
 
 // TODO: Implement foo() and bar()
 // foo() should modify value under passed pointer to 10
+int foo(int pointer)
 // bar() should modify value under passed pointer to 20
 // Can we have a pointer to const or a const pointer?
 
