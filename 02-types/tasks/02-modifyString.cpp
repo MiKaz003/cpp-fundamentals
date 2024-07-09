@@ -2,6 +2,9 @@
 #include <string>
 
 // TODO: Implement modifyString()
+void modifyString(std::string& str){
+    str = "Other string";
+}
 // It should modify passed string to text "Other string"
 
 int main() {
