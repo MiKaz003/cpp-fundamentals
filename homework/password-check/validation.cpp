@@ -3,6 +3,15 @@
 #include <cctype>
 #include <vector>
 // TODO: Put implementations here
+
+enum class ErrorCode{
+    Ok,
+    PasswordNeedsAtLeastNineCharacters,
+    PasswordNeedsAtLeastOneNumber,
+    PasswordNeedsAtLeastOneSpecialCharacter,
+    PasswordNeedsAtLeastOneUppercaseLetter,
+    PasswordsDoNotMatch
+};
 bool doPasswordsMatch(std::string& pass1, std::string& pass2) {
     if (pass1 == pass2) {
         return true;
