@@ -4,14 +4,6 @@
 #include <vector>
 // TODO: Put implementations here
 
-enum class ErrorCode{
-    Ok,
-    PasswordNeedsAtLeastNineCharacters,
-    PasswordNeedsAtLeastOneNumber,
-    PasswordNeedsAtLeastOneSpecialCharacter,
-    PasswordNeedsAtLeastOneUppercaseLetter,
-    PasswordsDoNotMatch
-};
 bool doPasswordsMatch(std::string& pass1, std::string& pass2) {
     if (pass1 == pass2) {
         return true;
@@ -39,7 +31,7 @@ ErrorCode checkPasswordRules(std::string pass) {
     }
 }
 
-ErrorCode checkPassword(std::string pass, std::string repPass){
+ErrorCode checkPassword(std::string& pass, std::string& repPass){
     if (doPasswordsMatch(pass, repPass)){
         return checkPasswordRules(pass);
     }
@@ -48,19 +40,21 @@ ErrorCode checkPassword(std::string pass, std::string repPass){
     }
 }
 
-std::string getErrorMessage(int errorNum){
-    static const std::vector<std::string> errorMessages = {
-     "Ok",
-     "Password needs to have at least nine characters",
-     "Password needs to have at least one number",
-     "Password needs to have at least one special character",
-     "Password needs to have at least one uppercase letter",
-     "Passwords do not match",
-    };
-    if (errorNum >= 0 && errorNum <= static_cast<int>(errorMessages.size())){
-        return errorMessages[errorNum];
-    }
-    else{
-        return "Unknown error";
+std::string getErrorMessage(ErrorCode& errorNum){
+    switch(errorNum){ 
+        case ErrorCode::Ok:
+            return "Ok";
+        case ErrorCode::PasswordNeedsAtLeastNineCharacters:
+            return "Password needs to have at least nine characters";
+        case ErrorCode::PasswordNeedsAtLeastOneNumber:
+            return "Password needs to have at least one number";
+        case ErrorCode::PasswordNeedsAtLeastOneSpecialCharacter:
+            return "Password needs to have at least one special character";
+        case ErrorCode::PasswordNeedsAtLeastOneUppercaseLetter:
+            return "Password needs to have at least one uppercase letter";
+        case ErrorCode::PasswordsDoNotMatch:
+            return "Passwords do not match";
+        default:
+            return "Unknown error";
     }
 }
