@@ -1,0 +1,185 @@
+In file included from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/gtest-printers.h:122,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/gtest-matchers.h:49,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h:47,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/gtest-death-test.h:43,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/gtest.h:64,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:1:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp: In member function ‘virtual void DoPasswordsMatchTests_returnsTrueForIdenticalPasswords_Test::TestBody()’:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:11:34: error: binding reference of type ‘std::string&’ {aka ‘std::__cxx11::basic_string<char>&’} to ‘const string’ {aka ‘const std::__cxx11::basic_string<char>’} discards qualifiers
+   11 |     EXPECT_TRUE(doPasswordsMatch(EMPTY_PASSWORD, EMPTY_PASSWORD));
+      |                                  ^~~~~~~~~~~~~~
+In file included from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:2:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/validation.hpp:15:36: note:   initializing argument 1 of ‘bool doPasswordsMatch(std::string&, std::string&)’
+   15 | bool doPasswordsMatch(std::string& pass1, std::string& pass2);
+      |                       ~~~~~~~~~~~~~^~~~~
+In file included from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/gtest-printers.h:122,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/gtest-matchers.h:49,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h:47,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/gtest-death-test.h:43,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/gtest.h:64,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:1:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:12:34: error: binding reference of type ‘std::string&’ {aka ‘std::__cxx11::basic_string<char>&’} to ‘const string’ {aka ‘const std::__cxx11::basic_string<char>’} discards qualifiers
+   12 |     EXPECT_TRUE(doPasswordsMatch(PROPER_PASSWORD, PROPER_PASSWORD));
+      |                                  ^~~~~~~~~~~~~~~
+In file included from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:2:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/validation.hpp:15:36: note:   initializing argument 1 of ‘bool doPasswordsMatch(std::string&, std::string&)’
+   15 | bool doPasswordsMatch(std::string& pass1, std::string& pass2);
+      |                       ~~~~~~~~~~~~~^~~~~
+In file included from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/gtest-printers.h:122,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/gtest-matchers.h:49,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h:47,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/gtest-death-test.h:43,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/gtest.h:64,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:1:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:13:34: error: binding reference of type ‘std::string&’ {aka ‘std::__cxx11::basic_string<char>&’} to ‘const string’ {aka ‘const std::__cxx11::basic_string<char>’} discards qualifiers
+   13 |     EXPECT_TRUE(doPasswordsMatch(TOO_SHORT_PASSWORD, TOO_SHORT_PASSWORD));
+      |                                  ^~~~~~~~~~~~~~~~~~
+In file included from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:2:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/validation.hpp:15:36: note:   initializing argument 1 of ‘bool doPasswordsMatch(std::string&, std::string&)’
+   15 | bool doPasswordsMatch(std::string& pass1, std::string& pass2);
+      |                       ~~~~~~~~~~~~~^~~~~
+In file included from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/gtest-printers.h:122,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/gtest-matchers.h:49,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h:47,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/gtest-death-test.h:43,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/gtest.h:64,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:1:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp: In member function ‘virtual void DoPasswordsMatchTests_returnsFalseForDifferentPasswords_Test::TestBody()’:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:17:35: error: binding reference of type ‘std::string&’ {aka ‘std::__cxx11::basic_string<char>&’} to ‘const string’ {aka ‘const std::__cxx11::basic_string<char>’} discards qualifiers
+   17 |     EXPECT_FALSE(doPasswordsMatch(EMPTY_PASSWORD, PROPER_PASSWORD));
+      |                                   ^~~~~~~~~~~~~~
+In file included from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:2:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/validation.hpp:15:36: note:   initializing argument 1 of ‘bool doPasswordsMatch(std::string&, std::string&)’
+   15 | bool doPasswordsMatch(std::string& pass1, std::string& pass2);
+      |                       ~~~~~~~~~~~~~^~~~~
+In file included from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/gtest-printers.h:122,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/gtest-matchers.h:49,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h:47,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/gtest-death-test.h:43,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/gtest.h:64,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:1:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:18:35: error: binding reference of type ‘std::string&’ {aka ‘std::__cxx11::basic_string<char>&’} to ‘const string’ {aka ‘const std::__cxx11::basic_string<char>’} discards qualifiers
+   18 |     EXPECT_FALSE(doPasswordsMatch(PROPER_PASSWORD, EMPTY_PASSWORD));
+      |                                   ^~~~~~~~~~~~~~~
+In file included from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:2:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/validation.hpp:15:36: note:   initializing argument 1 of ‘bool doPasswordsMatch(std::string&, std::string&)’
+   15 | bool doPasswordsMatch(std::string& pass1, std::string& pass2);
+      |                       ~~~~~~~~~~~~~^~~~~
+In file included from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/gtest-printers.h:122,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/gtest-matchers.h:49,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h:47,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/gtest-death-test.h:43,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/gtest.h:64,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:1:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:19:35: error: binding reference of type ‘std::string&’ {aka ‘std::__cxx11::basic_string<char>&’} to ‘const string’ {aka ‘const std::__cxx11::basic_string<char>’} discards qualifiers
+   19 |     EXPECT_FALSE(doPasswordsMatch(PROPER_PASSWORD, TOO_SHORT_PASSWORD));
+      |                                   ^~~~~~~~~~~~~~~
+In file included from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:2:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/validation.hpp:15:36: note:   initializing argument 1 of ‘bool doPasswordsMatch(std::string&, std::string&)’
+   15 | bool doPasswordsMatch(std::string& pass1, std::string& pass2);
+      |                       ~~~~~~~~~~~~~^~~~~
+In file included from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/gtest.h:71,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:1:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp: In member function ‘virtual void checkPasswordTests_returnsPasswordsDoNotMatchForDifferentPasswords_Test::TestBody()’:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:23:29: error: binding reference of type ‘std::string&’ {aka ‘std::__cxx11::basic_string<char>&’} to ‘const string’ {aka ‘const std::__cxx11::basic_string<char>’} discards qualifiers
+   23 |     EXPECT_EQ(checkPassword(PROPER_PASSWORD, EMPTY_PASSWORD), ErrorCode::PasswordsDoNotMatch);  // equal ==
+      |                             ^~~~~~~~~~~~~~~
+In file included from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:2:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/validation.hpp:17:38: note:   initializing argument 1 of ‘ErrorCode checkPassword(std::string&, std::string&)’
+   17 | ErrorCode checkPassword(std::string& pass, std::string& repPass);
+      |                         ~~~~~~~~~~~~~^~~~
+In file included from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/gtest.h:71,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:1:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:24:29: error: binding reference of type ‘std::string&’ {aka ‘std::__cxx11::basic_string<char>&’} to ‘const string’ {aka ‘const std::__cxx11::basic_string<char>’} discards qualifiers
+   24 |     EXPECT_EQ(checkPassword(EMPTY_PASSWORD, PROPER_PASSWORD), ErrorCode::PasswordsDoNotMatch);
+      |                             ^~~~~~~~~~~~~~
+In file included from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:2:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/validation.hpp:17:38: note:   initializing argument 1 of ‘ErrorCode checkPassword(std::string&, std::string&)’
+   17 | ErrorCode checkPassword(std::string& pass, std::string& repPass);
+      |                         ~~~~~~~~~~~~~^~~~
+In file included from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/gtest.h:71,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:1:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:25:29: error: binding reference of type ‘std::string&’ {aka ‘std::__cxx11::basic_string<char>&’} to ‘const string’ {aka ‘const std::__cxx11::basic_string<char>’} discards qualifiers
+   25 |     EXPECT_EQ(checkPassword(TOO_SHORT_PASSWORD, PROPER_PASSWORD), ErrorCode::PasswordsDoNotMatch);
+      |                             ^~~~~~~~~~~~~~~~~~
+In file included from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:2:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/validation.hpp:17:38: note:   initializing argument 1 of ‘ErrorCode checkPassword(std::string&, std::string&)’
+   17 | ErrorCode checkPassword(std::string& pass, std::string& repPass);
+      |                         ~~~~~~~~~~~~~^~~~
+In file included from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/gtest.h:71,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:1:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp: In member function ‘virtual void checkPasswordTests_returnsValuesBetweenOkAndPasswordNeedsAtLeastOneUppercaseLetter_Test::TestBody()’:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:36:29: error: binding reference of type ‘std::string&’ {aka ‘std::__cxx11::basic_string<char>&’} to ‘const string’ {aka ‘const std::__cxx11::basic_string<char>’} discards qualifiers
+   36 |     EXPECT_GE(checkPassword(PROPER_PASSWORD, PROPER_PASSWORD), MIN_ALLOWED_ERROR_CODE);
+      |                             ^~~~~~~~~~~~~~~
+In file included from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:2:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/validation.hpp:17:38: note:   initializing argument 1 of ‘ErrorCode checkPassword(std::string&, std::string&)’
+   17 | ErrorCode checkPassword(std::string& pass, std::string& repPass);
+      |                         ~~~~~~~~~~~~~^~~~
+In file included from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/gtest.h:71,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:1:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:37:29: error: binding reference of type ‘std::string&’ {aka ‘std::__cxx11::basic_string<char>&’} to ‘const string’ {aka ‘const std::__cxx11::basic_string<char>’} discards qualifiers
+   37 |     EXPECT_LE(checkPassword(PROPER_PASSWORD, PROPER_PASSWORD), MAX_ALLOWED_ERROR_CODE);
+      |                             ^~~~~~~~~~~~~~~
+In file included from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:2:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/validation.hpp:17:38: note:   initializing argument 1 of ‘ErrorCode checkPassword(std::string&, std::string&)’
+   17 | ErrorCode checkPassword(std::string& pass, std::string& repPass);
+      |                         ~~~~~~~~~~~~~^~~~
+In file included from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/gtest.h:71,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:1:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp: In member function ‘virtual void getErrorMessageTests_returnsErrorCodeAsString_Test::TestBody()’:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:41:42: error: cannot bind non-const lvalue reference of type ‘ErrorCode&’ to an rvalue of type ‘ErrorCode’
+   41 |     EXPECT_EQ(getErrorMessage(ErrorCode::Ok), "Ok");
+      |                               ~~~~~~~~~~~^~
+In file included from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:2:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/validation.hpp:14:40: note:   initializing argument 1 of ‘std::string getErrorMessage(ErrorCode&)’
+   14 | std::string getErrorMessage(ErrorCode& errorNum);
+      |                             ~~~~~~~~~~~^~~~~~~~
+In file included from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/gtest.h:71,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:1:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:42:42: error: cannot bind non-const lvalue reference of type ‘ErrorCode&’ to an rvalue of type ‘ErrorCode’
+   42 |     EXPECT_EQ(getErrorMessage(ErrorCode::PasswordNeedsAtLeastNineCharacters), "Password needs to have at least nine characters");
+      |                               ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:2:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/validation.hpp:14:40: note:   initializing argument 1 of ‘std::string getErrorMessage(ErrorCode&)’
+   14 | std::string getErrorMessage(ErrorCode& errorNum);
+      |                             ~~~~~~~~~~~^~~~~~~~
+In file included from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/gtest.h:71,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:1:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:43:42: error: cannot bind non-const lvalue reference of type ‘ErrorCode&’ to an rvalue of type ‘ErrorCode’
+   43 |     EXPECT_EQ(getErrorMessage(ErrorCode::PasswordNeedsAtLeastOneNumber), "Password needs to have at least one number");
+      |                               ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:2:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/validation.hpp:14:40: note:   initializing argument 1 of ‘std::string getErrorMessage(ErrorCode&)’
+   14 | std::string getErrorMessage(ErrorCode& errorNum);
+      |                             ~~~~~~~~~~~^~~~~~~~
+In file included from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/gtest.h:71,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:1:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:44:42: error: cannot bind non-const lvalue reference of type ‘ErrorCode&’ to an rvalue of type ‘ErrorCode’
+   44 |     EXPECT_EQ(getErrorMessage(ErrorCode::PasswordNeedsAtLeastOneSpecialCharacter), "Password needs to have at least one special character");
+      |                               ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:2:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/validation.hpp:14:40: note:   initializing argument 1 of ‘std::string getErrorMessage(ErrorCode&)’
+   14 | std::string getErrorMessage(ErrorCode& errorNum);
+      |                             ~~~~~~~~~~~^~~~~~~~
+In file included from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/gtest.h:71,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:1:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:45:42: error: cannot bind non-const lvalue reference of type ‘ErrorCode&’ to an rvalue of type ‘ErrorCode’
+   45 |     EXPECT_EQ(getErrorMessage(ErrorCode::PasswordNeedsAtLeastOneUppercaseLetter), "Password needs to have at least one uppercase letter");
+      |                               ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:2:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/validation.hpp:14:40: note:   initializing argument 1 of ‘std::string getErrorMessage(ErrorCode&)’
+   14 | std::string getErrorMessage(ErrorCode& errorNum);
+      |                             ~~~~~~~~~~~^~~~~~~~
+In file included from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/build/_deps/googletest-src/googletest/include/gtest/gtest.h:71,
+                 from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:1:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:46:42: error: cannot bind non-const lvalue reference of type ‘ErrorCode&’ to an rvalue of type ‘ErrorCode’
+   46 |     EXPECT_EQ(getErrorMessage(ErrorCode::PasswordsDoNotMatch), "Passwords do not match");
+      |                               ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+In file included from /home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/test.cpp:2:
+/home/michal/Pulpit/workspace/cpp_fundamentals/cpp-fundamentals/homework/password-check/validation.hpp:14:40: note:   initializing argument 1 of ‘std::string getErrorMessage(ErrorCode&)’
+   14 | std::string getErrorMessage(ErrorCode& errorNum);
+      |                             ~~~~~~~~~~~^~~~~~~~
+make[2]: *** [CMakeFiles/passwordCheck-ut.dir/build.make:76: CMakeFiles/passwordCheck-ut.dir/test.cpp.o] Błąd 1
+make[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/passwordCheck-ut.dir/all] Błąd 2
+make: *** [Makefile:146: all] Błąd 2
