@@ -25,26 +25,26 @@ bool checkSpecialChar(std::string& pass) {
     return pass.find_first_of(special_chars) != std::string::npos;
 }
 
-int checkPasswordRules(std::string& pass) {
+ErrorCode checkPasswordRules(std::string pass) {
     if (std::none_of(pass.begin(), pass.end(), ::isupper)) {
-        return (static_cast<int>(ErrorCode::PasswordNeedsAtLeastOneUppercaseLetter));
+        return ErrorCode::PasswordNeedsAtLeastOneUppercaseLetter;
     } else if (std::none_of(pass.begin(), pass.end(), ::isdigit)) {
-        return (static_cast<int>(ErrorCode::PasswordNeedsAtLeastOneNumber));
+        return ErrorCode::PasswordNeedsAtLeastOneNumber;
     } else if (!checkSpecialChar(pass)) {
-        return (static_cast<int>(ErrorCode::PasswordNeedsAtLeastOneSpecialCharacter));
+        return ErrorCode::PasswordNeedsAtLeastOneSpecialCharacter;
     } else if (pass.length() < 9) {
-        return (static_cast<int>(ErrorCode::PasswordNeedsAtLeastNineCharacters));
+        return ErrorCode::PasswordNeedsAtLeastNineCharacters;
     } else {
-        return (static_cast<int>(ErrorCode::Ok));
+        return ErrorCode::Ok;
     }
 }
 
-int checkPassword(std::string& pass, std::string& repPass){
+ErrorCode checkPassword(std::string pass, std::string repPass){
     if (doPasswordsMatch(pass, repPass)){
         return checkPasswordRules(pass);
     }
     else{
-        return (static_cast<int> (ErrorCode::PasswordsDoNotMatch));
+        return ErrorCode::PasswordsDoNotMatch;
     }
 }
 

@@ -3,9 +3,16 @@
 // TODO: I'm empty :) Put enum and function headers here.
 // Don't forget the header guard - #pragma once
 
-enum class ErrorCode;
+enum class ErrorCode{
+    Ok,
+    PasswordNeedsAtLeastNineCharacters,
+    PasswordNeedsAtLeastOneNumber,
+    PasswordNeedsAtLeastOneSpecialCharacter,
+    PasswordNeedsAtLeastOneUppercaseLetter,
+    PasswordsDoNotMatch
+};
 std::string getErrorMessage(int errorNum);
 bool doPasswordsMatch(std::string& pass1, std::string& pass2);
-int checkPasswordRules(std::string& pass);
-int checkPassword(std::string& pass, std::string repPass);
+ErrorCode checkPasswordRules(std::string pass);
+ErrorCode checkPassword(std::string pass, std::string repPass);
 bool checkSpecialChar(std::string& pass);
