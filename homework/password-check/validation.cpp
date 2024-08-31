@@ -4,7 +4,7 @@
 #include <vector>
 // TODO: Put implementations here
 
-bool doPasswordsMatch(std::string& pass1, std::string& pass2) {
+bool doPasswordsMatch(const std::string& pass1, const std::string& pass2) {
     if (pass1 == pass2) {
         return true;
     } else {
@@ -12,12 +12,12 @@ bool doPasswordsMatch(std::string& pass1, std::string& pass2) {
     }
 }
 
-bool checkSpecialChar(std::string& pass) {
+bool checkSpecialChar(const std::string& pass) {
     static const std::string special_chars = "!@#$%^&*()_-+=`~:;<,>.|";
     return pass.find_first_of(special_chars) != std::string::npos;
 }
 
-ErrorCode checkPasswordRules(std::string pass) {
+ErrorCode checkPasswordRules(const std::string pass) {
     if (std::none_of(pass.begin(), pass.end(), ::isupper)) {
         return ErrorCode::PasswordNeedsAtLeastOneUppercaseLetter;
     } else if (std::none_of(pass.begin(), pass.end(), ::isdigit)) {
@@ -31,7 +31,7 @@ ErrorCode checkPasswordRules(std::string pass) {
     }
 }
 
-ErrorCode checkPassword(std::string& pass, std::string& repPass){
+ErrorCode checkPassword(const std::string& pass, const std::string& repPass){
     if (doPasswordsMatch(pass, repPass)){
         return checkPasswordRules(pass);
     }
@@ -40,7 +40,7 @@ ErrorCode checkPassword(std::string& pass, std::string& repPass){
     }
 }
 
-std::string getErrorMessage(ErrorCode& errorNum){
+std::string getErrorMessage(const ErrorCode& errorNum){
     switch(errorNum){ 
         case ErrorCode::Ok:
             return "Ok";
